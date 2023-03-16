@@ -1,7 +1,3 @@
-# STEAM Career Day Presentation
-
-> March 16, 2023
-
 ## Introduction
 
 ### I am a "software engineer"
