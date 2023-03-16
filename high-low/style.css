@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 2rem;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+
+    text-align: center;
+}
+
+input {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin: 4rem auto;
+}
+
+input, button {
+    width: 15ch;
+}
+
+output {
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    background: #eee;
+}
+
+h1 {
+    text-align: center
+}
+

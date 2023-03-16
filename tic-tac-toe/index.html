@@ -1,0 +1,95 @@
+<!doctype html>
+
+<title>Tic Tac Toe</title>
+
+<noscript>JavaScript is required</noscript>
+
+<div id="board">
+    <div class="board-line board-line-v" id="board-line-v0"></div>
+    <div class="board-line board-line-v" id="board-line-v1"></div>
+    <div class="board-line board-line-h" id="board-line-h0"></div>
+    <div class="board-line board-line-h" id="board-line-h1"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+
+<style>
+    :root {
+        --line-thickness: 0.8vmax;
+        --line-color: black;
+    }
+    html, body {
+        height: 100%;
+    }
+    body {
+        padding: 2rem;
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background: white;
+        color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(skyblue, white, skyblue);
+    }
+    #board {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        width: 50vmax;
+        height: 50vmax;
+
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+    .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 15vmax;
+        width: 33%;
+        height: 33%;
+    }
+    .board-line {
+        position: absolute;
+        background: var(--line-color);
+    }
+    .board-line-h {
+        left: 0;
+        right: 0;
+        height: var(--line-thickness);
+    }
+    .board-line-v {
+        top: 0;
+        bottom: 0;
+        width: var(--line-thickness);
+    }
+    #board-line-v0 {
+        left: 33%;
+    }
+    #board-line-v1 {
+        left: 67%;
+    }
+    #board-line-h0 {
+        top: 33%;
+    }
+    #board-line-h1 {
+        top: 67%;
+    }
+    .square.win {
+        color: red;
+    }
+</style>
+
+<script src="game.js"></script>

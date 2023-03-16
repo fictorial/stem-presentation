@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 2rem;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+input, button {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin: 4rem auto;
+}
+
+input, button {
+    width: 15ch;
+    font-size: inherit;
+}
+
+button {
+    background: dodgerblue;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button.wrong {
+    background: red;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+output {
+    font-size: 96px;
+    background: yellow;
+    padding: 1rem 2rem;
+    border: 1px solid #777;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+
+h1 {
+    text-align: center
+}
+
+
