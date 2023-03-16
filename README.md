@@ -104,7 +104,7 @@ like to be a programmer a bit!
 - Now that we know what we want the computer to do, we just have to tell it how to do it for us!
 - But first, let's play the game!
 
-> SHOW THE GAME
+[Play the game][tic-tac-toe]
 
 - OK so what are some of the things we might need to tell the computer in order to play this game?
 - Clicking on a square to put an X or O there
@@ -131,9 +131,7 @@ like to be a programmer a bit!
 
 > Let them guess numbers
 
-- OK, but let's JUICE it up a little bit.
-
-> Add the version that has the confetti on win!
+[Play the game][high-low]
 
 ## AUTOGUESSER
 
@@ -145,7 +143,7 @@ What? How is that possible? There are a THOUSAND different numbers!
 How can the computer guess it in 10 or fewer guesses?
 First, let's see if it can!
 
-> Have a kid write down a number between 1 and 1000
+> Have someone write down a number between 1 and 1000
 > Go through the HIGH, LOW loop
 > Show how it works.
 
@@ -162,7 +160,24 @@ First, let's see if it can!
 
 - So what does the code for this look like? It's super easy!
 
-> show test.py
+```python
+low = 1
+high = 1000
+mystery_number = 889
+
+while True:
+    guess = int((low + high)/2)
+    if guess < mystery_number:
+        low = guess
+    elif guess > mystery_number:
+        high = guess
+    else:
+        break
+
+print('the number is', guess)
+```
+
+[Play the game][high-low-autoguesser]
 
 ## MINECRAFT
 
@@ -180,7 +195,6 @@ it!  Now I think it's more like 40-50 people!
 ## CHAT GPT
 
 > If there's time, show ChatGPT.
-> Have a backup video of a session in case it is down!
 
 So, now let's give an example of a program that DOES NOT need super careful
 instructions to do what it does.
@@ -234,4 +248,7 @@ anytime soon!
 * Programming is all about telling a computer what you want it to do!
 * Figuring that out is challenging but a lot of fun!
 
-Any questions?
+
+[high-low]: ./high-low
+[high-low-autoguesser]: ./high-low-autoguesser
+[tic-tac-toe]: ./tic-tac-toe
